@@ -1,0 +1,12 @@
+# dsh-skin-dark-gold bundle patch — auto-registers the skin loader entry.
+#
+# This file is what `dsh.bundle` points at: when the package is installed into
+# a profile (e.g. `dsh plugin --profile web add dsh-skin-dark-gold`), the
+# reconcile step appends the package to the profile's `dsh.profile.bundles`
+# and this patch inserts the loader row on the next profile boot.
+#
+# Note: do NOT also add the row to the profile's own cordis.patch.yml — the
+# bundle patch already registers it (a duplicate id would fail to load).
+- insert:
+    - id: skin-dark-gold
+      name: dsh-skin-dark-gold

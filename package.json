@@ -1,0 +1,45 @@
+{
+  "name": "dsh-skin-dark-gold",
+  "version": "1.0.0",
+  "description": "Dark-gold particle skin for the DeepSeek Harness Web GUI: 暗金背景 + 漂浮金色粒子 + 暖白黄文字",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [],
+      "immediately": true
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "theme",
+    "skin",
+    "dark-gold",
+    "particles"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengguang10086/dsh-skin-dark-gold.git"
+  },
+  "homepage": "https://github.com/fengguang10086/dsh-skin-dark-gold#readme",
+  "license": "MIT"
+}
