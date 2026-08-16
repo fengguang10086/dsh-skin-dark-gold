@@ -1,6 +1,6 @@
 {
   "name": "dsh-skin-dark-gold",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dark-gold particle skin for the DeepSeek Harness Web GUI: 暗金背景 + 漂浮金色粒子 + 暖白黄文字",
   "type": "module",
   "main": "./lib/index.js",
